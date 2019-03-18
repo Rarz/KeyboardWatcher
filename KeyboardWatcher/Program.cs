@@ -44,7 +44,7 @@ namespace KeyboardWatcher
 
            player.Init(volumeStream);
 
-            Console.Write("\nButton pushed, playing alert!\n");
+            Console.WriteLine("Button pushed, playing alert!");
             player.Play();
         }
 
@@ -63,11 +63,11 @@ namespace KeyboardWatcher
                 {
                     SHIFT_DOWN = true;
                 }
-                else if (CONTROL_DOWN && SHIFT_DOWN && theKey == "F10") // Is it the F10 key combined with CTRL and SHIFT?
+                else if (CONTROL_DOWN && SHIFT_DOWN && theKey == "F12") // Is it the F10 key combined with CTRL and SHIFT?
                 {
                     Alert();
                 }
-                Console.Write((Keys)vkCode + " ");
+                //Console.Write((Keys)vkCode + " ");
             }
             else if (nCode >= 0 && wParam == (IntPtr)WM_KEYUP) //KeyUP
             {
