@@ -67,7 +67,11 @@ namespace KeyboardWatcher
                 {
                     Alert();
                 }
+<<<<<<< HEAD
                 //Console.Write((Keys)vkCode + " ");
+=======
+                // Console.Write((Keys)vkCode + " ");
+>>>>>>> 192996d2572f0b43a2081c520fd33d6232a69ef1
             }
             else if (nCode >= 0 && wParam == (IntPtr)WM_KEYUP) //KeyUP
             {
